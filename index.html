@@ -4,10 +4,530 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Rheeze Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 </head>
 <body>
-    <p>Hello world!</p>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a class="about active" onclick="scrollToAboutPage()">About</a></li>
+                <li><a class="experience" href="#experience">Experience</a></li>
+                <li><a class="portfolio" href="#portfolio">Portfolio</a></li>
+                <li><a class="skills" href="#skills">Skills</a></li>
+                <li class="push"><a class="contacts" href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <section id="about">
+            <header>
+                <h1>
+                    Rheeze Gyver
+                </h1>
+                <h1 class="last-name">Kalahi</h1>
+                <h2>51 GRANITE LN · CARNEYS POINT, NJ 08069</h2>
+                <p>I am a Bachelor of Science in Information Technology graduate at AMA University in the Philippines.
+                    I have experience in .NET development. I have been using C#, javaScript, HTML5, CSS3, and Bootstrap.
+                    For database, I have been using Microsoft SQL Server, MySQL, and SQLite. I have been using the following 
+                    IDE's: Visual Studio 2015, 2017, 2019, 2022, Visual Studio Code, IntelliJ, and Brackets. I have been using 
+                    Git for version control. I have been using both GitHub and Bitbucket depending on clients. I have used 
+                    AWS EC2 instance and Microsoft Azure for web hosting. I am currently working as an IT Support at Amazon for 
+                    3 years. I can troubleshoot desktops, laptops, cellphones, TV's, tablets, scanners, radios, laser and zebra printers, 
+                    servers, and any IT devices. I am able to work as part of a team and indepently. I am eager to learn and very
+                    approachable. I like to learn about latest technologies.
+                </p>
+            </header>
+        </section>
+        <section id="my-picture">      
+            <img class="image" src="img/profile.jpg" alt="" />
+        </section>
+        <section class="it-support-acy5" id="experience">
+            <h1 class="h1">IT SUPPORT ASSOCIATE II</h1>
+            <h2 class="h2">ACY5 AMAZON SORTATION CENTER</h2>
+            <p>Main Point Of Contact for IT support from 2PM to 10:30PM Monday to Friday. 
+                Supported the building with IT related issues from associates, end user devices 
+                and network issues. Have been repairing and troubleshooting defective 
+                equipments to be deployed again when another equipment malfunctions. Have
+                been keeping an eye on our ticket queue for any network issues to be addressed
+                immediately to avoid impact on operations. I have been working alone on my 
+                shift since I transferred to this building.
+            </p>
+            <h3 class="h3">January 2022 - Present</h3>
+        </section>
+        <section class="it-support-acy1">
+            <h1 class="h1">IT SUPPORT ASSOCIATE II</h1>
+            <h2 class="h2">ACY1 AMAZON FULFILLMENT CENTER</h2>
+            <p>Main Point Of Contact for IT support from 6:30PM to 7AM Wednesday to Saturday. 
+                Supported the building with IT related issues from associates, end user devices 
+                and network issues. Have been repairing and troubleshooting defective equipments 
+                to be deployed again when another equipment malfunctions. Have been keeping 
+                an eye on our ticket queue for any network issues to be addressed immediately to 
+                avoid impact on operations. This shift have 2 IT personnel onsite to support the 
+                building.
+            </p>
+            <h3 class="h3">August 2020 - January 2022</h3>
+        </section>
+        <section class="internship">
+            <h1 class="h1">INTERN</h1>
+            <h2 class="h2">GOLDENB SYSTEMS AND SOLUTIONS, INC</h2>
+            <p>I joined the dev team in developing an inventory system for a client company. 
+                Technologies used were .Net Framework and Entity Framework. IDE used is 
+                Visual Studio 2017 and Microsoft SQL Server for the database.
+            </p>
+            <h3 class="h3">May 2019 - March 2020</h3>
+        </section>
+
+        <section class="personnal-projects">
+            <h1>Personnal projects</h1>
+            <div class="static-resume">
+                <p>
+                    Static resume - This is my static resume that was built last 2020. This is 
+                    where I learned a lot of things in front end development. I was researching 
+                    a lot of stuffs and as soon as I learned something that I think is cool, I 
+                    immidiately incorporate it to this project. This project is a result of self 
+                    learning and a lot of research. Technologies used to
+                    build this was HTML5, CSS3, JavaScript, and Bootstrap.
+                </p>
+            </div>
+            <div class="resume-with-backend">
+                <p>
+                    Resume with backend - This was built to showcase my skills 
+                    in full-stack development. It has CMS features to make editing, and adding of experience 
+                    and skills easier to manage by using UI instead of hard coding the datas in the source code. 
+                    This has a signin feature so that only the registered credentials can access the admin side of 
+                    the system. Technologies used for this project are Blazor WebAssembly, C#, .NET 6, ASP.NET 
+                    Core Web API, Entity Framework Core, Microsoft Azure, Git, GitHub, SQLite, HTML, CSS, and 
+                    Bootstrap 5.
+                </p>
+            </div>
+        </section>
+
+        <section class="projects-in-csharp">
+            <h1>Projects in C#</h1>
+            <div class="cignal">
+                <p>
+                    CIGNAL TV Payroll System - Technologies used for this project were .Net Framework, ASP.NET 
+                    Core 2 MVC and Entity Framework Core (code first). IDE used is Visual Studio 2019 and Microsoft SQL 
+                    Server for the database. I created this project to automate the payroll of the employees.
+                </p>
+            </div>
+            <div class="baguio-golf-view">
+                <p>
+                    BAGUIO GOLF VIEW APARTMENT AND TRANSIENT Booking Reservation System - Technologies used 
+                    were .Net Framework, ASP.Net Core 2 MVC and Entity Framework Core (Code First). IDE used 
+                    is Visual Studio 2019 and Microsoft SQL Server for the database. I created this project to be used 
+                    as an online reservation system.
+                </p>
+            </div>
+            <div class="baptc">
+                <p>
+                    BENGUET AGRI-PINOY TRADING CENTER Ticketing and monitoring - Technologies used were .Net 
+                    Framework, ASP.Net Core 2 MVC and Entity Framework Core (Code First). IDE used is Visual 
+                    Studio 2019 and Microsoft SQL Server for the database. This project is for a company that is 
+                    offering parking space and monitoring price for fruits and vegetables.
+                </p>
+            </div>
+            <div class="cheokan-gym">
+                <p>
+                    CHEOKAN GYM Monitoring System - Technologies used were .Net Framework, ASP.Net Core 2 MVC 
+                    and Entity Framework Core (Code First). IDE used is Visual Studio 2019 and Microsoft SQL Server for 
+                    the database. I created this project for a gym to monitor membership and inventory of the gym.
+                </p>
+            </div>
+            <div class="bitshares">
+                <p>
+                    BITSHARES LABS, INC. Web Bundy Clock System - Technologies used were .Net Framework, ASP.Net 
+                    Core 2 MVC and Entity Framework Core (Code First). IDE used is Visual Studio 2019 and Microsoft SQL 
+                    Server for the database. This is a web bundy clock system which allows employees to clock in and 
+                    clock out from their mobile phones.
+                </p>
+            </div>
+            <div class="online-shop">
+                <p>
+                    ECOMMERCE PROJECT Online shop - Technologies used were Blazor webassembly app, .Net 6.0 Web 
+                    API, .Net Framework, Entity Framework Core 6 (Code First). IDE used is Visual Studio 2022 
+                    and Microsoft SQL Server for database. This is the latest project that I worked with. 
+                    This project is a complete ecommerce website that has user registration and login.
+                </p>
+            </div>
+        </section>
+
+        <section class="simple-games">
+            <h1>Games - DOM manipulation</h1>
+            <div class="racing-game">
+                <p>
+                    Racing Game - Technologies used to create this game were JavaScript, CSS, HTML and DOM manipulation. 
+                    Game instructions: This game is a racing game. First player to reach the score of 30 
+                    wins the game. Click on ROLL DICE button to roll a dice. If 1 is rolled, it will 
+                    automatically switch to the next player and your current score will reset to 0. Click 
+                    the HOLD button to add your current score to your total score. If you click this button, 
+                    your current score will be added to your total score and it will switch to the other 
+                    player. When a player reaches the score of 30, ROLL DICE button and HOLD button will 
+                    no longer work. You need to click the NEW GAME button inorder to play again. 
+                    <a href="https://rheeze-racinggame.netlify.app/" target="_blank">
+                        Click here to play the game.
+                    </a>
+                </p>
+            </div>
+            <div class="guessing-game">
+                <p>
+                    Guessing Game - Technologies used to create this game were JavaScript, CSS, HTML and DOM 
+                    manipulation. Game instructions: This game is a guessing game. The unknown number is a 
+                    number from 1 to 20. You need to guess this number in order to win the game. The Highscore 
+                    will automatically change everytime you have a score higher than your previous scores. If 
+                    you guessed 10 consecutive wrong numbers, you will lose the game. 
+                    <a href="https://rheeze-guessinggame.netlify.app/" target="_blank">
+                        Click here to play the game.
+                    </a>
+                </p>
+            </div>
+        </section>
+        <section id="portfolio">
+            <article class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="number-text">1 / 8</div>
+                  <img src="img/resume-with-backend.png">
+                  <div class="text">My portfolio with backend. Source code: 
+                    <a class="social-icon" href="https://github.com/rheeze-dev/ResumeWithBackend" target="_blank">Click here.</a>
+                  </div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="number-text">2 / 8</div>
+                  <img src="img/static-resume.png">
+                  <div class="text">My static resume. Source code: 
+                    <a class="social-icon" href="https://bitbucket.org/rheeze-dev/resume/src/master/" target="_blank">Click here.</a>
+                  </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="number-text">3 / 8</div>
+                    <img src="img/GuessingGame.PNG">
+                    <div class="text">Guessing Game using Dom manipulation. Source code: 
+                     <a class="social-icon" href="https://github.com/rheeze-dev/GuessingGame" target="_blank">Click here.</a>
+                    </div>
+                 </div>
+ 
+                 <div class="mySlides fade">
+                    <div class="number-text">4 / 8</div>
+                    <img src="img/RacingGame.PNG">
+                    <div class="text">Racing Game using Dom manipulation. Source code: 
+                     <a class="social-icon" href="https://github.com/rheeze-dev/RacingGame" target="_blank">Click here.</a>
+                    </div>
+                 </div>
+
+                <div class="mySlides fade">
+                  <div class="number-text">5 / 8</div>
+                  <img src="img/BAPTC.png">
+                  <div class="text">BAPTC ticketing and monitoring system. Source code: 
+                    <a class="social-icon" href="https://bitbucket.org/rheeze-dev/baptcsystem/src/master/" target="_blank">Click here.</a>
+                  </div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="number-text">6 / 8</div>
+                  <img src="img/BlazorEcommerce.PNG">
+                  <div class="text">Sportechment Online Shop. Source code: 
+                    <a class="social-icon" href="https://github.com/rheeze-dev/BlazorEcommerce" target="_blank">Click here.</a>
+                  </div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="number-text">7 / 8</div>
+                  <img src="img/Cignal.png">
+                  <div class="text">Cignal Payroll System. Source code:
+                    <a class="social-icon" href="https://bitbucket.org/rheeze-dev/payroll/src/master/" target="_blank">Click here.</a>
+                  </div>
+                </div>
+
+                <div class="mySlides fade">
+                   <div class="number-text">8 / 8</div>
+                   <img src="img/Reservation.png" />
+                   <div class="text">Baguio Golfview Transient Reservation. Source code: 
+                    <a class="social-icon" href="https://bitbucket.org/rheeze-dev/reservation/src/master/" target="_blank">Click here.</a>
+                   </div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+            </article>
+                <br>
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                  <span class="dot" onclick="currentSlide(5)"></span> 
+                  <span class="dot" onclick="currentSlide(6)"></span>  
+                  <span class="dot" onclick="currentSlide(7)"></span>  
+                  <span class="dot" onclick="currentSlide(8)"></span>  
+                </div>
+                <br>
+        </section>
+
+        <section class="technical-skills" id="skills">
+            <h1>
+                TECHNOLOGIES USED
+            </h1>
+            <h2>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        C#
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        .Net Framework
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Blazor WebAssembly App
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        ASP.NET Core
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Entity Framework Core
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        JQuery
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        AJAX
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        HTML5
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        CSS3
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        JavaScript
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Language Integrated Query (LINQ)
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Bootstrap
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Git
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        CodeIgniter
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Php
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Aamazon Web Services EC2 (AWS EC2)
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Azure
+                    </li>
+                </ul>
+            </h2>
+        </section>
+        <section class="tools-used" id="skills">
+            <h1>
+                TOOLS USED
+            </h1>
+            <h2>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Visual Studio 2015
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Visual Studio 2017
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Visual Studio 2019
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Visual Studio 2022
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Visual Studio Code
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        IntelliJ
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Brackets
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Microsoft SQL Server
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        MySQL
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        SQLite
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Github
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Bitbucket
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Internet Information Services (IIS)
+                    </li>
+                </ul>
+            </h2>
+        </section>
+        <section class="other-skills" id="skills">
+            <h1>
+                OTHER SKILLS
+            </h1>
+            <h2>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Full-Stack Development
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Back-End Web Development
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Object-Oriented Programming
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        ASP.NET Web API
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Dependency Injection
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Lambda Expressions
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Nuget
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Model-View-Controller (MVC)
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Query Writing
+                    </li>
+                </ul>
+            </h2>
+        </section>
+        <section class="personnal-skills" id="skills">
+            <h1>
+                PERSONNAL SKILLS
+            </h1>
+            <h2>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Highly organized and efficient
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Coachable and willing to learn
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Easily adapts to changes
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Excellent written and verbal communication skills
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Keen attention to details
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Ability to work independently or as part of a team
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Proven leadership skills and ability to motivate
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Self-motivated and directed
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa fa-check"></i></span>
+                        Analytical and problem solver
+                    </li>
+                </ul>
+            </h2>
+        </section>
+        
+        <section id="contacts">
+            <div class="get-in-touch">
+                <h1>Let's Get In Touch!</h1>
+            </div>
+            <div class="contact-me">
+                <p>Want to contact me? Give me a call or send me a an email 
+                and I will get back to you as soon as possible!
+                </p>
+            </div>
+            <div class="details">
+                <div class="phone">
+                    <i class="fa fa-phone fa-3x mb-3"></i>
+                    <div>443-577-8160</div>
+                </div>
+                <div class="email">
+                    <i class="fa fa-envelope fa-3x mb-3"></i>
+                    <div>
+                        <a href="mailto:ggybzz2297@gmail.com">Email me</a> 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-icons">
+                <h2>Check my accounts:</h2>
+                <a class="social-icon" title="My GitHub account" href="https://github.com/rheeze-dev" target="_blank"><i class="fa fa-github"></i></a>
+                <a class="social-icon" title="My Bitbucket account" href="https://bitbucket.org/rheeze-dev/" target="_blank"><i class="fa fa-bitbucket"></i></a>
+                <a class="social-icon" title="My LinkedIn account" href="https://www.linkedin.com/in/rheeze-gyver-kalahi-a372aa185/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a class="social-icon" title="My Facebook account" href="https://www.facebook.com/gGybzz" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
