@@ -124,7 +124,7 @@ nav {
 }
 
 p {
-  font-size: 15px;
+  font-size: 20px;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -184,6 +184,14 @@ padding-top: 130px;
   margin: 0;
 }
 
+#contacts h1 {
+  font-size: 30px;
+}
+
+#contacts h2 {
+  font-size: 25px;
+}
+
 #contacts div, #contacts h1, #contacts p {
   /* border: 3px solid #fff; */
   padding: 10px;
@@ -193,6 +201,7 @@ padding-top: 130px;
 .personnal-projects h1, .projects-in-csharp h1, .simple-games h1 {
 grid-column: 1 / -1;
 grid-row: 1;
+font-size: 30px;
 text-align: center;
 margin: 0;
 padding: 2px;
@@ -260,12 +269,11 @@ grid-template-rows: .1fr 1fr 1fr;
 gap: .5rem;
 }
 
-.simple-games a {
-/* text-decoration: none; */
-color: black;
+a {
+  color: #004d40;
 }
 
-.simple-games a:hover {
+a:hover {
 color: blue;
 }
 
@@ -295,6 +303,7 @@ padding: 6px;
 }
 
 #skills h1 {
+font-size: 30px;
 text-align: center;
 }
 
@@ -350,15 +359,6 @@ grid-row: 2;
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: .5rem;
-}
-
-.details a {
-color: black;
-/* text-decoration: none; */
-}
-
-.details a:hover {
-color: blue;
 }
 
 .phone {
@@ -464,7 +464,6 @@ left: 0;
 border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
 background-color: rgba(0,0,0,0.8);
 }

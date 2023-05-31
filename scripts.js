@@ -1,26 +1,24 @@
-let navAbout = document.querySelector(".about");
-let navExperience = document.querySelector(".experience");
-let navPortfolio = document.querySelector(".portfolio");
-let navSkills = document.querySelector(".skills");
-let navContacts = document.querySelector(".contacts");
+const navAbout = document.querySelector(".about");
+const navExperience = document.querySelector(".experience");
+const navPortfolio = document.querySelector(".portfolio");
+const navSkills = document.querySelector(".skills");
+const navContacts = document.querySelector(".contacts");
 
-let aboutElement = document.querySelector("#about");
-let myPictureElement = document.querySelector("#my-picture");
-let experienceElement = document.querySelector("#experience");
-let portfolioElement = document.querySelector("#portfolio");
-let skillsElement = document.querySelector("#skills");
-let contactsElement = document.querySelector("#contacts");
+const aboutElement = document.querySelector("#about");
+const myPictureElement = document.querySelector("#my-picture");
+const experienceElement = document.querySelector("#experience");
+const portfolioElement = document.querySelector("#portfolio");
+const skillsElement = document.querySelector("#skills");
+const contactsElement = document.querySelector("#contacts");
 
 window.addEventListener("scroll", () => {
-    let aboutPosition = aboutElement.getBoundingClientRect();
-    let myPicturePosition = myPictureElement.getBoundingClientRect();
-    let experiencePosition = experienceElement.getBoundingClientRect();
-    let portfolioPosition = portfolioElement.getBoundingClientRect();
-    let skillsPosition = skillsElement.getBoundingClientRect();
-    let contactsPosition = contactsElement.getBoundingClientRect();
-    let bottomOfScreen = window.innerHeight;
-    // console.log(contactsPosition);
-    // console.log(bottomOfScreen);
+    const aboutPosition = aboutElement.getBoundingClientRect();
+    const myPicturePosition = myPictureElement.getBoundingClientRect();
+    const experiencePosition = experienceElement.getBoundingClientRect();
+    const portfolioPosition = portfolioElement.getBoundingClientRect();
+    const skillsPosition = skillsElement.getBoundingClientRect();
+    const contactsPosition = contactsElement.getBoundingClientRect();
+    const bottomOfScreen = window.innerHeight;
 
     if (myPicturePosition.top <= 65 && aboutPosition.bottom <= bottomOfScreen) {
         navAbout.classList.add("active");
@@ -80,9 +78,9 @@ window.addEventListener("scroll", () => {
     }
 
     function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
         if (n > slides.length) { slideIndex = 1 }
         if (n < 1) { slideIndex = slides.length }
         for (i = 0; i < slides.length; i++) {
