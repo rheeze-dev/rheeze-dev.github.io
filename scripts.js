@@ -59,13 +59,6 @@ window.addEventListener("scroll", () => {
 
     document.querySelector("footer").innerHTML = "Copyright &copy; " + new Date().getFullYear();
 
-    function scrollToAboutPage() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    }
-
     let slideIndex = 1;
     showSlides(slideIndex);
 
@@ -91,6 +84,30 @@ window.addEventListener("scroll", () => {
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
+    }
+
+    
+    // function scrollToAboutPage() {
+    //     window.scrollTo({
+    //         top: 0,
+    //         behavior: "smooth"
+    //     });
+    // }
+
+    document.querySelector(".about").onclick = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    document.querySelector(".icon").onclick = () => {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
     }
 
     setInterval(function () {

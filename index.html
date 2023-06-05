@@ -12,13 +12,16 @@
 <body>
     <div class="container">
         <nav>
-            <ul>
-                <li><a class="about active" onclick="scrollToAboutPage()">About</a></li>
-                <li><a class="experience" href="#experience">Experience</a></li>
-                <li><a class="portfolio" href="#portfolio">Portfolio</a></li>
-                <li><a class="skills" href="#skills">Skills</a></li>
-                <li class="push"><a class="contacts" href="#contacts">Contacts</a></li>
-            </ul>
+            <div class="topnav" id="myTopnav">
+                <a class="about active" href="#">About</a></li>
+                <a class="experience" href="#experience">Experience</a></li>
+                <a class="portfolio" href="#portfolio">Portfolio</a></li>
+                <a class="skills" href="#skills">Skills</a></li>
+                <a class="contacts push" href="#contacts">Contacts</a></li>
+                <a href="javascript:void(0);" class="icon">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </nav>
         <section id="about">
             <header>
@@ -254,7 +257,6 @@
                     <a class="social-icon" href="https://bitbucket.org/rheeze-dev/reservation/src/master/" target="_blank">Click here.</a>
                    </div>
                 </div>
-                
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
                 
