@@ -185,7 +185,6 @@ padding-top: 130px;
 
 .personnal-projects div, .personnal-projects h1, .projects-in-csharp div, .projects-in-csharp h1, .simple-games div, .simple-games h1 {
   background: rgb(218, 255, 218);
-  /* background: rgb(218, 218, 218); */
   border: 4px solid #fff;
   padding: 10px;
   margin: 0;
@@ -274,7 +273,7 @@ padding: 10px;
 margin: 0 .5rem 0 0;
 display: grid;
 grid-template-columns: 1fr;
-grid-template-rows: .1fr 1fr 1fr;
+/* grid-template-rows: .1fr 1fr 1fr 1fr; */
 gap: .5rem;
 }
 
@@ -286,14 +285,19 @@ a:hover {
 color: blue;
 }
 
+.donut-clicker-game {
+  grid-column: 1;
+  grid-row: 2;
+}
+
 .racing-game {
 grid-column: 1;
-grid-row: 2;
+grid-row: 3;
 }
 
 .guessing-game {
 grid-column: 1;
-grid-row: 3;
+grid-row: 4;
 }
 
 #portfolio {
@@ -446,14 +450,12 @@ margin-right: 0;
 background-color: blue;
 }
 
-/* Slideshow container */
 .slideshow-container {
 max-width: 1000px;
 position: relative;
 margin: auto;
 }
 
-/* Next & previous buttons */
 .prev, .next {
 cursor: pointer;
 position: absolute;
@@ -469,7 +471,6 @@ border-radius: 0 3px 3px 0;
 user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
 right: 0;
 border-radius: 3px 0 0 3px;
@@ -484,9 +485,7 @@ border-radius: 3px 0 0 3px;
 background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
 .text {
-/* color: rgb(185, 255, 185); */
 color: blue;
 font-size: 15px;
 padding: 8px 12px;
@@ -496,7 +495,6 @@ width: 100%;
 text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .number-text {
 color: black;
 font-size: 12px;
@@ -505,7 +503,6 @@ position: absolute;
 top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
 cursor: pointer;
 height: 15px;
@@ -517,7 +514,6 @@ display: inline-block;
 transition: background-color 0.6s ease;
 }
 
-/* Fading animation */
 .fade {
 animation-name: fade;
 animation-duration: 1.5s;
@@ -526,13 +522,6 @@ animation-duration: 1.5s;
 @keyframes fade {
 from {opacity: .4} 
 to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-.prev, .next,.text {
-  font-size: 11px;
-  }
 }
 
 @media only screen and (max-width:1050px) {
@@ -557,89 +546,89 @@ to {opacity: 1}
   overflow: clip;
 }
 
-    #my-picture {
-      background: white;
-      text-align: center;
-      padding-top: 10px;
-    }
+  #my-picture {
+    background: white;
+    text-align: center;
+    padding-top: 10px;
+  }
 
-    .image {
-      border-radius: 50%;
-      margin: 0;
-      padding: 0;
-      height: 100px;
-      width: 100px;
-    }
+  .image {
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    width: 100px;
+  }
 
-    #about {
-      background: white;
-      margin: 0;
-      padding: 0 20px;
-    }
+  #about {
+    background: white;
+    margin: 0;
+    padding: 0 20px;
+  }
 
-    .internship {
-      margin: 0 .5rem;
-    }
+  .internship {
+    margin: 0 .5rem;
+  }
 
-    .personnal-projects {
-      margin: 0 .5rem;
-    }
+  .personnal-projects {
+    margin: 0 .5rem;
+  }
 
-    .projects-in-csharp {
-      margin: 0 .5rem;
-    }
+  .projects-in-csharp {
+    margin: 0 .5rem;
+  }
 
-    .simple-games {
-      margin: 0 .5rem;
-    }
+  .simple-games {
+    margin: 0 .5rem;
+  }
 
-    .tools-used {
-      margin: 0 .5rem 0 0;
-    }
+  .tools-used {
+    margin: 0 .5rem 0 0;
+  }
 
-    .other-skills {
-      margin: 0 0 0 .5rem;
-    }
+  .other-skills {
+    margin: 0 0 0 .5rem;
+  }
 
-    .slideshow-container img {
-      max-height: 400px;
-    }
+  .slideshow-container img {
+    max-height: 400px;
+  }
 
-    #portfolio .dot:hover {
-      background: #bbb;
-    }
+  #portfolio .dot:hover {
+    background: #bbb;
+  }
 
-    #skills li {
-      padding: 2px;
-    }
+  #skills li {
+    padding: 2px;
+  }
 
-    #about h1 {
-      font-size: 3em;
-    }
+  #about h1 {
+    font-size: 3em;
+  }
 
-    #about h2 {
-      font-size: 1.5em;
-    }
+  #about h2 {
+    font-size: 1.5em;
+  }
 
-    .h1 {
-      font-size: 2.5em;
-    }
+  .h1 {
+    font-size: 2.5em;
+  }
 
-    .h2 {
-      font-size: 1.5em;
-    }
+  .h2 {
+    font-size: 1.5em;
+  }
 
-    .h3 {
-      font-size: 1.17em;
-    }
+  .h3 {
+    font-size: 1.17em;
+  }
 
-    #contacts {
-      padding-top: 0;
-    }
+  #contacts {
+    padding-top: 0;
+  }
 
-    img {
-      max-width: 95%;
-    }
+  img {
+    max-width: 95%;
+  }
 }
 
 @media only screen and (max-width:550px) {
@@ -672,14 +661,14 @@ to {opacity: 1}
     text-align: left;
   }
 
-    #my-picture {
-      background: white;
-      text-align: center;
-    }
+  #my-picture {
+    background: white;
+    text-align: center;
+  }
 
-    .slideshow-container img {
-      max-height: 320px;
-    }
+  .slideshow-container img {
+    max-height: 320px;
+  }
 }
 
 @media only screen and (max-width:490px) {
@@ -729,7 +718,7 @@ to {opacity: 1}
 
   .topnav a {
     font-size: 14px;
-}
+  }
 
   #contacts .social-icons a {
     margin: 12px;
@@ -779,3 +768,9 @@ to {opacity: 1}
     font-size: 9px;
   }
 }
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {
+    font-size: 11px;
+    }
+  }

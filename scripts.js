@@ -86,14 +86,6 @@ window.addEventListener("scroll", () => {
         dots[slideIndex - 1].className += " active";
     }
 
-    
-    // function scrollToAboutPage() {
-    //     window.scrollTo({
-    //         top: 0,
-    //         behavior: "smooth"
-    //     });
-    // }
-
     document.querySelector(".about").onclick = () => {
         window.scrollTo({
             top: 0,
@@ -105,7 +97,8 @@ window.addEventListener("scroll", () => {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
           x.className += " responsive";
-        } else {
+        } 
+        else {
           x.className = "topnav";
         }
     }
