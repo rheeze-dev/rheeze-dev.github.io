@@ -12,13 +12,16 @@
 <body>
     <div class="container">
         <nav>
-            <ul>
-                <li><a class="about active" onclick="scrollToAboutPage()">About</a></li>
-                <li><a class="experience" href="#experience">Experience</a></li>
-                <li><a class="portfolio" href="#portfolio">Portfolio</a></li>
-                <li><a class="skills" href="#skills">Skills</a></li>
-                <li class="push"><a class="contacts" href="#contacts">Contacts</a></li>
-            </ul>
+            <div class="topnav" id="myTopnav">
+                <a class="about active" href="#">About</a></li>
+                <a class="experience" href="#experience">Experience</a></li>
+                <a class="portfolio" href="#portfolio">Portfolio</a></li>
+                <a class="skills" href="#skills">Skills</a></li>
+                <a class="contacts push" href="#contacts">Contacts</a></li>
+                <a href="javascript:void(0);" class="icon">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </nav>
         <section id="about">
             <header>
@@ -163,6 +166,16 @@
 
         <section class="simple-games">
             <h1>Games - DOM manipulation</h1>
+            <div class="donut-clicker-game">
+                <p>
+                    Donut Clicker Game - Technologies used to create this game were JavaScript, CSS, HTML DOM 
+                    manipulation and API. Game instructions: This game requires you to click the donut to obtain donuts. You can use your 
+                    donuts to buy auto clickers which automatically gives you donuts per second. I fetched 2 API's which are being 
+                    used in the random user name feature and the random jokes that are being displayed in the jokes area.
+                </p>
+                <p><a href="https://rheeze-donut-clicker.netlify.app/" target="_blank">https://rheeze-donut-clicker.netlify.app</a></p>
+                <p>Source code for this project: <a href="https://github.com/WeCanCodeIT/homework----donutmaker-rheeze-dev" target="_blank">Click here.</a></p>
+            </div>
             <div class="racing-game">
                 <p>
                     Racing Game - Technologies used to create this game were JavaScript, CSS, HTML and DOM manipulation. 
@@ -174,7 +187,7 @@
                     player. When a player reaches the score of 30, ROLL DICE button and HOLD button will 
                     no longer work. You need to click the NEW GAME button inorder to play again. 
                 </p>
-                <p><a href="https://rheeze-racinggame.netlify.app/" target="_blank">Click here to play the game.</a></p>
+                <p><a href="https://rheeze-racinggame.netlify.app/" target="_blank">https://rheeze-racinggame.netlify.app</a></p>
                 <p>Source code for this project: <a href="https://github.com/rheeze-dev/RacingGame" target="_blank">Click here.</a></p>
             </div>
             <div class="guessing-game">
@@ -185,7 +198,7 @@
                     will automatically change everytime you have a score higher than your previous scores. If 
                     you guessed 10 consecutive wrong numbers, you will lose the game. 
                 </p>
-                <p><a href="https://rheeze-guessinggame.netlify.app/" target="_blank">Click here to play the game.</a></p>
+                <p><a href="https://rheeze-guessinggame.netlify.app/" target="_blank">https://rheeze-guessinggame.netlify.app</a></p>
                 <p>Source code for this project: <a href="https://github.com/rheeze-dev/GuessingGame" target="_blank">Click here.</a></p>
             </div>
         </section>
@@ -254,7 +267,6 @@
                     <a class="social-icon" href="https://bitbucket.org/rheeze-dev/reservation/src/master/" target="_blank">Click here.</a>
                    </div>
                 </div>
-                
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
                 

@@ -12,32 +12,35 @@ html {
   scroll-behavior: smooth;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.topnav {
   overflow: hidden;
 }
 
-nav li {
-  display: flex;
+.topnav a {
   float: left;
-}
-
-nav li a {
   display: block;
-  color: black;
+  color: #000000;
   text-align: center;
-  padding: 16px;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
 }
 
-nav li .active {
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  /* background-color: #04AA6D; */
   color: blue;
 }
 
-.push {
-  float: right;
+.topnav .icon {
+  display: none;
+}
+
+.contacts {
+  float: right !important;
 }
 
 .image {
@@ -56,7 +59,7 @@ nav li .active {
 
 .last-name {
   color:rgb(2, 130, 250);
-  padding-bottom: 1em;
+  padding-bottom: 1rem;
 }
 
 #about h2 {
@@ -72,7 +75,7 @@ nav li .active {
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0.05fr 1fr .5fr .5fr .5fr 1fr 1fr .95fr 0.05fr;
+  /* grid-template-rows: .05fr .5fr .5fr .5fr .5fr 1fr 1fr .95fr 0.05fr; */
   grid-template-areas: 
       "nav nav nav nav"
       "my-picture about about about"
@@ -95,7 +98,6 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-radius: var(--main-radius);
 }
 
 #about {
@@ -103,6 +105,7 @@ nav {
   /* background: white; */
   grid-area: about;
   padding: 50px;
+  margin: 0 .5rem 0 0;
   border-radius: var(--main-radius);
 }
 
@@ -133,6 +136,7 @@ p {
 background: rgb(185, 255, 185);
 /* background: white; */
   grid-area: my-picture;
+  margin: 0 0 0 .5rem;
   border-radius: var(--main-radius);
 }
 
@@ -147,6 +151,7 @@ padding-top: 130px;
   border-radius: var(--main-radius);
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 0 0 .5rem;
 }
 
 .it-support-acy1 {
@@ -155,6 +160,7 @@ padding-top: 130px;
   border-radius: var(--main-radius);
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 .5rem 0 0;
 }
 
 .internship {
@@ -163,6 +169,7 @@ padding-top: 130px;
   border-radius: var(--main-radius);
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 0 0 .5rem;
 }
 
 .personnal-projects {
@@ -178,7 +185,6 @@ padding-top: 130px;
 
 .personnal-projects div, .personnal-projects h1, .projects-in-csharp div, .projects-in-csharp h1, .simple-games div, .simple-games h1 {
   background: rgb(218, 255, 218);
-  /* background: rgb(218, 218, 218); */
   border: 4px solid #fff;
   padding: 10px;
   margin: 0;
@@ -222,6 +228,7 @@ background: rgb(185, 255, 185);
 grid-area: projects-in-csharp;
 border-radius: var(--main-radius);
 padding: 10px;
+margin: 0 0 0 .5rem;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: .1fr 1fr 1fr;
@@ -263,9 +270,10 @@ background: rgb(185, 255, 185);
 grid-area: simple-games;
 border-radius: var(--main-radius);
 padding: 10px;
+margin: 0 .5rem 0 0;
 display: grid;
 grid-template-columns: 1fr;
-grid-template-rows: .1fr 1fr 1fr;
+/* grid-template-rows: .1fr 1fr 1fr 1fr; */
 gap: .5rem;
 }
 
@@ -277,19 +285,27 @@ a:hover {
 color: blue;
 }
 
+.donut-clicker-game {
+  grid-column: 1;
+  grid-row: 2;
+}
+
 .racing-game {
 grid-column: 1;
-grid-row: 2;
+grid-row: 3;
 }
 
 .guessing-game {
 grid-column: 1;
-grid-row: 3;
+grid-row: 4;
 }
 
 #portfolio {
 background: rgb(185, 255, 185);
 grid-area: portfolio;
+margin: 0 .5rem;
+text-align: center;
+border-radius: var(--main-radius);
 }
 
 li:hover {
@@ -314,6 +330,7 @@ padding: 3px;
 .technical-skills {
 background: rgb(185, 255, 185);
 grid-area: technical-skills;
+margin: 0 0 0 .5rem;
 border-radius: var(--main-radius);
 }
 
@@ -326,6 +343,7 @@ border-radius: var(--main-radius);
 .personnal-skills {
 background: rgb(185, 255, 185);
 grid-area: personnal-skills;
+margin: 0 .5rem 0 0;
 border-radius: var(--main-radius);
 }
 
@@ -341,6 +359,7 @@ grid-area: contacts;
 border-radius: var(--main-radius);
 text-align: center;
 padding-top: 60px;
+margin: 0 .5rem;
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: .25fr .25fr .25fr .25fr;
@@ -377,6 +396,7 @@ footer {
 background: rgb(185, 255, 185);
 grid-area: footer;
 text-align: center;
+margin: 0 .5rem .5rem .5rem;
 border-radius: var(--main-radius);
 padding-top: var(--main-padding);
 }
@@ -397,7 +417,7 @@ color: blue;
 img {
   vertical-align: middle;
   height: 550px;
-  width: 100%;
+  max-width: 100%;
   padding-top: 40px;
 }
 
@@ -430,14 +450,12 @@ margin-right: 0;
 background-color: blue;
 }
 
-/* Slideshow container */
 .slideshow-container {
 max-width: 1000px;
 position: relative;
 margin: auto;
 }
 
-/* Next & previous buttons */
 .prev, .next {
 cursor: pointer;
 position: absolute;
@@ -453,7 +471,6 @@ border-radius: 0 3px 3px 0;
 user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
 right: 0;
 border-radius: 3px 0 0 3px;
@@ -468,9 +485,7 @@ border-radius: 3px 0 0 3px;
 background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
 .text {
-/* color: rgb(185, 255, 185); */
 color: blue;
 font-size: 15px;
 padding: 8px 12px;
@@ -480,7 +495,6 @@ width: 100%;
 text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .number-text {
 color: black;
 font-size: 12px;
@@ -489,7 +503,6 @@ position: absolute;
 top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
 cursor: pointer;
 height: 15px;
@@ -501,7 +514,6 @@ display: inline-block;
 transition: background-color 0.6s ease;
 }
 
-/* Fading animation */
 .fade {
 animation-name: fade;
 animation-duration: 1.5s;
@@ -510,13 +522,6 @@ animation-duration: 1.5s;
 @keyframes fade {
 from {opacity: .4} 
 to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-.prev, .next,.text {
-  font-size: 11px;
-  }
 }
 
 @media only screen and (max-width:1050px) {
@@ -541,181 +546,10 @@ to {opacity: 1}
   overflow: clip;
 }
 
-    #my-picture {
-      background: white;
-      /* background: rgb(185, 255, 185); */
-      text-align: center;
-      padding-top: 10px;
-    }
-
-    .image {
-      border-radius: 50%;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      height: 100px;
-      width: 100px;
-    }
-
-    #about {
-      background: white;
-      /* background: rgb(185, 255, 185); */
-      margin: 0;
-      padding: 0 20px;
-    }
-
-    .last-name {
-      padding: 0;
-    }
-
-    .slideshow-container img {
-      max-height: 400px;
-    }
-
-    #portfolio .dot:hover {
-      background: #bbb;
-    }
-
-    #skills li {
-      padding: 2px;
-    }
-
-    #about h1 {
-      font-size: 3em;
-    }
-
-    #about h2 {
-      font-size: 1.5em;
-    }
-
-    .h1 {
-      font-size: 2.5em;
-    }
-
-    .h2 {
-      font-size: 1.5em;
-    }
-
-    .h3 {
-      font-size: 1.17em;
-    }
-
-    #contacts {
-      padding-top: 0;
-    }
-}
-
-@media only screen and (max-width:550px) {
-  .container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr;
-    grid-template-areas: 
-      "nav nav"
-      "my-picture my-picture"
-      "about about"
-      "it-support-acy5 it-support-acy1"
-      "internship internship"
-      "personnal-projects personnal-projects"
-      "projects-in-csharp projects-in-csharp"
-      "simple-games simple-games"
-      "portfolio portfolio"
-      "technical-skills tools-used"
-      "other-skills personnal-skills"
-      "contacts contacts"
-      "footer footer";
-    gap: .5rem;
-    overflow: clip;
-  }
-
-    #my-picture {
-      background: white;
-      /* background: rgb(185, 255, 185); */
-      text-align: center;
-    }
-
-    .image {
-      border-radius: 50%;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      height: 100px;
-      width: 100px;
-    }
-
-    #about {
-      background: white;
-      /* background: rgb(185, 255, 185); */
-      margin: 0;
-      padding: 0 20px;
-    }
-
-    .last-name {
-      padding: 0;
-    }
-
-    .slideshow-container img {
-      max-height: 320px;
-    }
-
-    #portfolio .dot:hover {
-      background: #bbb;
-    }
-
-    #skills li {
-      padding: 2px;
-    }
-
-    #about h1 {
-      font-size: 3em;
-    }
-
-    #about h2 {
-      font-size: 1.5em;
-    }
-
-    .h1 {
-      font-size: 2.5em;
-    }
-
-    .h2 {
-      font-size: 1.5em;
-    }
-
-    .h3 {
-      font-size: 1.17em;
-    }
-
-    #contacts {
-      padding-top: 0;
-    }
-}
-
-@media only screen and (max-width:450px) {
-.container {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr;
-  grid-template-areas: 
-    "nav nav"
-    "my-picture my-picture"
-    "about about"
-    "it-support-acy5 it-support-acy1"
-    "internship internship"
-    "personnal-projects personnal-projects"
-    "projects-in-csharp projects-in-csharp"
-    "simple-games simple-games"
-    "portfolio portfolio"
-    "technical-skills tools-used"
-    "other-skills personnal-skills"
-    "contacts contacts"
-    "footer footer";
-  gap: .5rem;
-  overflow: clip;
-}
-
   #my-picture {
     background: white;
-    /* background: rgb(185, 255, 185); */
     text-align: center;
+    padding-top: 10px;
   }
 
   .image {
@@ -728,21 +562,118 @@ to {opacity: 1}
 
   #about {
     background: white;
-    /* background: rgb(185, 255, 185); */
     margin: 0;
     padding: 0 20px;
   }
 
-  .last-name {
-    padding: 0;
+  .internship {
+    margin: 0 .5rem;
+  }
+
+  .personnal-projects {
+    margin: 0 .5rem;
+  }
+
+  .projects-in-csharp {
+    margin: 0 .5rem;
+  }
+
+  .simple-games {
+    margin: 0 .5rem;
+  }
+
+  .tools-used {
+    margin: 0 .5rem 0 0;
+  }
+
+  .other-skills {
+    margin: 0 0 0 .5rem;
   }
 
   .slideshow-container img {
-    max-height: 250px;
+    max-height: 400px;
   }
 
   #portfolio .dot:hover {
     background: #bbb;
+  }
+
+  #skills li {
+    padding: 2px;
+  }
+
+  #about h1 {
+    font-size: 3em;
+  }
+
+  #about h2 {
+    font-size: 1.5em;
+  }
+
+  .h1 {
+    font-size: 2.5em;
+  }
+
+  .h2 {
+    font-size: 1.5em;
+  }
+
+  .h3 {
+    font-size: 1.17em;
+  }
+
+  #contacts {
+    padding-top: 0;
+  }
+
+  img {
+    max-width: 95%;
+  }
+}
+
+@media only screen and (max-width:550px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .contacts {
+    float: left !important;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #my-picture {
+    background: white;
+    text-align: center;
+  }
+
+  .slideshow-container img {
+    max-height: 320px;
+  }
+}
+
+@media only screen and (max-width:490px) {
+  .slideshow-container img {
+    max-height: 250px;
   }
 
   #skills li {
@@ -781,8 +712,12 @@ to {opacity: 1}
     font-size: 12px;
   }
 
-  #contacts {
-    padding-top: 0;
+  .text {
+    font-size: 10px;
+  }
+
+  .topnav a {
+    font-size: 14px;
   }
 
   #contacts .social-icons a {
@@ -791,63 +726,8 @@ to {opacity: 1}
 }
 
 @media only screen and (max-width:368px) {
-.container {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr;
-  grid-template-areas: 
-    "nav nav"
-    "my-picture my-picture"
-    "about about"
-    "it-support-acy5 it-support-acy1"
-    "internship internship"
-    "personnal-projects personnal-projects"
-    "projects-in-csharp projects-in-csharp"
-    "simple-games simple-games"
-    "portfolio portfolio"
-    "technical-skills tools-used"
-    "other-skills personnal-skills"
-    "contacts contacts"
-    "footer footer";
-  gap: .5rem;
-  overflow: clip;
-}
-
-  nav li a {
-    padding: 8px;
-  }
-
-  #my-picture {
-    background: white;
-    /* background: rgb(185, 255, 185); */
-    text-align: center;
-    padding-top: 10px;
-  }
-
-  .image {
-    border-radius: 50%;
-    margin: 0;
-    padding: 0;
-    height: 100px;
-    width: 100px;
-  }
-
-  #about {
-    background: white;
-    /* background: rgb(185, 255, 185); */
-    margin: 0;
-    padding: 0 20px;
-  }
-
-  .last-name {
-    padding: 0;
-  }
-
   .slideshow-container img {
     max-height: 220px;
-  }
-
-  #portfolio .dot:hover {
-    background: #bbb;
   }
 
   #skills li {
@@ -858,36 +738,12 @@ to {opacity: 1}
     font-size: 2em;
   }
 
-  #about h2 {
-    font-size: 1em;
-  }
-
-  #skills h1 {
-    font-size: 1.5em;
-  }
-
-  #skills h2 {
-    font-size: 1em;
-  }
-
   .h1 {
     font-size: 1.5em;
   }
 
-  .h2 {
-    font-size: 1em;
-  }
-
-  .h3 {
-    font-size: .9em;
-  }
-
   p {
     font-size: 11px;
-  }
-
-  #contacts {
-    padding-top: 0;
   }
 
   #contacts .social-icons a {
@@ -895,107 +751,26 @@ to {opacity: 1}
   }
 }
 
-@media only screen and (max-width:290px) {
-.container {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr .01fr;
-  grid-template-areas: 
-    "nav nav"
-    "my-picture my-picture"
-    "about about"
-    "it-support-acy5 it-support-acy1"
-    "internship internship"
-    "personnal-projects personnal-projects"
-    "projects-in-csharp projects-in-csharp"
-    "simple-games simple-games"
-    "portfolio portfolio"
-    "technical-skills tools-used"
-    "other-skills personnal-skills"
-    "contacts contacts"
-    "footer footer";
-  gap: .5rem;
-  overflow: clip;
-}
-
-  nav li a {
-    padding: 4px;
-  }
-
-  #my-picture {
-    background: white;
-    /* background: rgb(185, 255, 185); */
-    text-align: center;
-    padding-top: 10px;
-  }
-
-  .image {
-    border-radius: 50%;
-    margin: 0;
-    padding: 0;
-    height: 100px;
-    width: 100px;
-  }
-
-  #about {
-    background: white;
-    /* background: rgb(185, 255, 185); */
-    margin: 0;
-    padding: 0 20px;
-  }
-
-  .last-name {
-    padding: 0;
-  }
-
+@media only screen and (max-width:315px) {
   .slideshow-container img {
     max-height: 200px;
-  }
-
-  #portfolio .dot:hover {
-    background: #bbb;
-  }
-
-  #skills li {
-    padding: 1.5px;
-  }
-
-  #about h1 {
-    font-size: 2em;
-  }
-
-  #about h2 {
-    font-size: 1em;
-  }
-
-  #skills h1 {
-    font-size: 1.5em;
-  }
-
-  #skills h2 {
-    font-size: 1em;
-  }
-
-  .h1 {
-    font-size: 1.5em;
-  }
-
-  .h2 {
-    font-size: 1em;
-  }
-
-  .h3 {
-    font-size: .9em;
   }
 
   p {
     font-size: 10px;
   }
 
-  #contacts {
-    padding-top: 0;
-  }
-
   #contacts .social-icons a {
     margin: 2px;
   }
+
+  .text {
+    font-size: 9px;
+  }
 }
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {
+    font-size: 11px;
+    }
+  }
